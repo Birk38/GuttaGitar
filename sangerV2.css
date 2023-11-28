@@ -75,12 +75,18 @@ h3{
     align-items: center;
     align-content: center;
 }
-#grid_akkorder{
+
+#grid_akkorder_LEFK{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+
+    text-align: center;
     justify-content: center;
     align-items: center;
     align-content: center;
-    justify-items: center;
 }
+
 h1{
     font-weight: 800;
 }
