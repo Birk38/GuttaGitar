@@ -70,10 +70,8 @@ h3{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 2fr;
 
-    text-align: center;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
-    align-content: center;
 }
 
 #grid_akkorder_LEFK{
@@ -81,10 +79,9 @@ h3{
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 2fr;
 
-    text-align: center;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
-    align-content: center;
+    
 }
 
 h1{
