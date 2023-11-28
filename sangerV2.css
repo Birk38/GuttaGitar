@@ -1,0 +1,146 @@
+
+* {
+    /* Minimal reset: */
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+    font-family: "Quicksand";
+}
+
+:root{
+    --pri: #45AAD8;
+    --sec: #F1AC60;
+}
+
+#Navbar{
+    padding: 25px;
+    background-color: var(--pri);
+    text-align: center;
+}
+
+#Grid_Sang{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+m{
+    display: inline-block;
+    width: 30px;
+}
+
+#Reklame{
+    text-align: center;
+}
+#Chords{
+    text-align: center;
+    margin-top: 15px;
+}
+#Chords div, #Chords p{
+    font-size: 25px;
+
+}
+#Chords h1{
+    font-size: 45px;
+}
+#Grid_Sang{
+    margin-top: 60px;
+}
+
+#Reklame img{
+    margin-top: 60px;
+}
+
+h3{
+    font-size: 25px;
+    font-weight:800;
+}
+
+#infobox{
+    background-color: var(--sec);
+    border-radius: 50px;
+    margin-top: 50px;
+    text-align: center;
+    height: fit-content;
+    padding: 20px;
+    max-width: 80%;
+}
+
+#grid_akkorder{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+#grid_akkorder{
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
+h1{
+    font-weight: 800;
+}
+
+#startButton{
+    padding: 25px;
+    background-color: var(--sec);
+    border-radius: 50px;
+    cursor: pointer;
+    border: 5px black;
+}
+
+#Autoscroll_section h4{
+    font-size: 25px;
+    font-weight: 800;
+    
+}
+
+#Autoscroll_section form{
+    all: initial;
+    appearance: auto;
+}
+
+input#fart{
+    appearance: auto;
+}
+
+#Autoscroll_section {
+    position: fixed;
+    top: 90%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    max-width: 40%;
+    background-color: var(--sec);
+    border-radius: 50px;
+    padding: 10px;
+}
+
+#right-side{
+    display: flex;
+    flex-direction: column;
+}
+
+#infobox img{
+    border-radius: 25px;
+    margin-top: 25px;
+}
+
+#right-side img:nth-child(2){
+    max-width: 60%;
+    margin-top: 50px;
+    margin-left: 10%;
+}
+
+img{
+    border-radius: 25px;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}

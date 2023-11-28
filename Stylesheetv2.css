@@ -1,0 +1,687 @@
+/*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
+
+/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+    all: unset;
+    display: revert;
+  }
+  
+  /* Preferred box-sizing value */
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  /*
+    Remove list styles (bullets/numbers)
+    in case you use it with normalize.css
+  */
+  ol, ul {
+    list-style: none;
+  }
+  
+  /* For images to not be able to exceed their container */
+  img {
+    max-width: 100%;
+  }
+  
+  /* Removes spacing between cells in tables */
+  table {
+    border-collapse: collapse;
+  }
+  
+  /* Revert the 'white-space' property for textarea elements on Safari */
+  textarea {
+    white-space: revert;
+  }
+
+:root{
+    --pri: #45AAD8;
+    --sec: #A3D0E6;
+    --bak: #f7f7f7;
+    --menu-count: 4;    /*antall greier i menyen */
+    --bildebredde-tabell: 200px
+}
+
+body {
+    overflow-x: hidden;
+    background-color: var(--bak);
+}
+
+h1, h2, h3, h4, h5, h6, p,a,div{
+    font-family: "Quicksand";
+}
+
+
+/* NAVBAR START */
+
+.mobil-meny {
+    display: none;
+}
+
+.header-main {
+    width: 100%;
+    padding: 0 60px;
+    height: 60px;
+    background-color: var(--pri);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.header-main nav {
+    display: flex;
+}
+
+.header-main .logo {
+    height: 40px;
+    width: fit-content;
+    align-self: center;
+    cursor: pointer;
+}
+
+.header-main .logo img {
+    height: 100%;
+}
+
+.header-main ul {
+    height: 100%;
+    padding-left: 40px;
+    list-style: none;
+    display: flex;
+    align-self: center;
+}
+
+.header-main ul li {
+    position: relative;
+}
+
+.header-main ul li a {
+    display: block;
+    padding: 0 10px;
+    height: 100%;
+    line-height: 60px;
+    font-size: 1rem;
+    color: #000000;
+    background-color: var(--pri);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all ease-in-out 100ms;
+}
+
+.header-main ul li a:hover {
+    background-color: #2a2a2a;
+    color: var(--pri);
+}
+
+/*drop down styling start*/
+
+.header-main ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    position: absolute;
+    left: -40px;
+    transition: all ease-in-out 100ms;
+}
+
+.header-main ul li ul li a {
+    white-space: nowrap;
+}
+
+ul li:hover>ul {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+/*drop down styling stop*/
+
+.header-main .sm {
+    align-self: center;
+    display: flex;
+}
+
+.header-main form {
+    height: 40px;
+    padding-right: 5px;
+    display: flex;
+    border: 1px solid #aeaeae;
+    border-radius: 20px 100px 100px 20px;
+    width: fit-content;
+    align-self: center;
+    background-color: #fff;
+}
+
+.header-main form input {
+    height: 100%;
+    width: 300px;
+    padding: 0 10px 0 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.header-main form input:focus {
+    border: 1px solid #111;
+}
+
+.header-main form button {
+    width: fit-content;
+    padding:  0 5px 0 10px;
+}
+
+.header-main form button img {
+    height: 24px;
+    padding-top: 15%;
+    cursor: pointer;
+}
+
+.header-main .sm-lenke {
+    height: 60px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.header-main .sm-lenke a {
+    display: block;
+    height: 30px;
+    margin-left: 10px;
+    cursor: pointer;
+    align-items: center;
+}
+
+.header-main .sm-lenke img{
+    height: 100%;
+}
+
+.søkekort {
+    background-color: #fff;
+    position: absolute;
+    top: 55px;
+    right: 280px;
+    z-index: 1000;
+    border: 1px solid black;
+    width: 200px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.kort-tekst {
+    font-size: 20px;
+    margin: 10px 5px;
+    padding: 2px;
+    color: #666;
+}
+
+.kort-tekst a {
+    padding-right: 152px;
+}
+
+.kort-tekst a:hover{
+    color: #000;
+    background-color: #eeeeee;
+}
+
+.hide {
+    display: none;
+}
+
+/* NAVBAR SLUTT */
+
+/* HERO START */
+
+#hero {
+    margin-top: 60px;
+    width: 100%;
+    height: 400px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background-repeat: repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#hero .birk {
+    width: 300px;
+    position: relative;
+    top: -90px;
+}
+
+#hero div:nth-of-type(2) {
+    text-align: center;
+    border: 2px solid black;
+    margin: 0 30px;
+    width: 70vw;
+    height: fit-content;
+    padding: 30px;
+}
+
+#hero .jonas {
+    width: 300px;
+    position: relative;   
+    top: 100px;
+}
+
+/* HERO SLUTT */
+
+/* HVA VI TILBYR START */
+
+#tilby {
+    width: 95%;
+    align-content: center;
+    padding: 5px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+#tilby h1 {
+    font-size: 50px;
+	width: 100%;
+	text-align: center;
+	border-bottom: 2px solid var(--sec);
+	line-height: 0.1px;
+    margin: 60px 0 60px 0;
+}
+
+#tilby h1 span {
+	background: var(--bak);
+	padding: 0 10px;
+}
+
+.container {
+    background-color: transparent;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container div{
+    margin: 5px;
+}
+
+.bildecontainer {
+    width: 450px;
+    height: 400px;
+    background-color: #eeeeee;
+}
+
+.minicontainer {
+    min-width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.minicontainer div {
+    background-color: #f1f1f1;
+    margin: 20px 30px;
+    flex: 1;
+    min-height: 250px;
+    max-height: 350px;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 100ms;
+    position: relative;
+}
+
+.minicontainer img {
+    width: 100%;
+    border-radius: 40px;
+    max-height: 50%;
+    align-self: center;
+}
+
+.minicontainer h2 {
+    text-align: center;
+    font-size: 30px;
+    padding: 7px 5px;
+}
+
+.minicontainer p {
+    padding: 10px;
+}
+
+.minicontainer .ikon {
+    font-size: 2rem;
+    position: absolute;
+    right: 1px;
+    bottom: -220px;
+    background-color: transparent;
+}
+
+.minicontainer .tilbuddiv:hover {
+    box-shadow: 5px 5px 5px 5px #888888;
+}
+
+/* HVA VI TILBYR SLUTT */
+
+/* ANDRE LINKER START */
+
+#andre {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 200px;  
+}
+
+#andre div img {
+    height: 200px;
+}
+
+/* ANDRE LINKER SLUTT */
+
+/* DUR-SIDEN START*/
+
+#akkord-seksjon {
+    margin-top: 60px;
+    background-color: var(--sec);
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    column-gap: 10px;
+    
+}
+
+#akkord-seksjon h1 {
+    font-size: 55px;
+    font-weight: 800;
+    text-align: center;
+    grid-column: 1/3;
+    margin: 20px;
+}
+
+#akkord-seksjon .akkordcontainer {
+    display: flex;
+    width: fit-content;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#akkord-seksjon .akkordcontainer div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    height: 300px;
+    width: 250px;
+    align-items: center;
+    padding: 10px;
+    margin: 40px 10px 0px 10px;
+    background-color: var(--bak);
+    border-radius: 10%;
+}
+
+#akkord-seksjon .akkordcontainer img{
+    width: var(--bildebredde-tabell);
+    position: absolute;
+    top: 70px;
+    height: 198px;
+}
+
+#akkord-seksjon .akkordcontainer h2{
+    font-size: 30px;
+    padding: 5px;
+    position: absolute;
+    top: 10px;
+}
+
+audio {
+    width: var(--bildebredde-tabell);
+    background-color: #000;
+    height: 40px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 100px;
+    display: none;
+}
+
+.akkordcontainer div:hover img {
+    display: none;
+}
+
+.akkordcontainer div:hover audio {
+    display: block;
+}
+
+.akkordinfo {
+    padding: 15px;
+    border-right: 5px solid black;
+    background-color: var();
+}
+
+.akkordinfo h2 {
+    font-size: 30px;
+    margin: 20px 5px;
+}
+
+.akkordcontainer i {
+    font-size: 100px;
+}
+
+#akkord-seksjon a:hover {
+    cursor: pointer;
+}
+
+
+/* DUR-SIDEN SLUTT*/
+
+
+
+/* #hero .container{
+    background-image: url(Bilder/jonasogbirkbakgrunn.png);
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--sec);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content:start;
+    }
+    
+#hero .container h1{
+    font-size: 50px;
+    font-weight: 700;
+}
+
+#dyptekst{
+    width: 60%;
+    margin-top: 25px;
+    margin-left: 25%;
+} */
+
+
+
+
+@media only screen and (max-width: 800px) {
+    
+    /* NAVBAR START */
+
+    .header-main {
+        display: none;
+    }
+
+    .mobil-meny {
+        display: flex;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 200;
+        background-color: var(--pri);
+    }
+
+    .mobil-meny img {
+        height: 80%;
+        align-self: center;
+    }
+
+    .header-main {
+        height: 100vh;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 0;
+        justify-content: flex-start;
+    }
+
+    .header-main nav {
+        width: 100%;
+        height: 80vh;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: stretch;
+    }
+
+    .header-main .logo {
+        height: 30%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .header-main .logo img {
+        height: 60%;
+        align-self: center;
+    }
+
+    .header-main ul {
+        height: 70%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-between;
+    }
+
+    .header-main ul li{
+        width: 100%;
+        height: calc(100% / var(--menu-count));
+        padding: 0;
+        margin: 0;
+        border-top: 1px solid #ddd;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        transition: all ease-in-out 100ms;
+    }
+
+    .header-main ul li:nth-last-child(1) {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .header-main ul li a {
+        width: 100%;
+        height: fit-content;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+    .header-main ul li a:hover {
+        background-color: transparent;
+        color: #111;
+    }
+
+    .header-main nav {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .header-main ul li ul {
+        display: none;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        z-index: 2000;
+        left: 0;
+    }
+
+    .header-main ul li ul li {
+        height: fit-content;
+        display: block;
+        background-color: var(--sec);
+    }
+
+    .header-main ul li ul li a {
+        background-color: var(--sec);
+        color: #fff;
+    }
+
+    .header-main ul li ul li a:hover{
+        background-color: #fff;
+        color: #000;
+    }
+
+    .header-main ul li:focus>ul,
+    .header-main ul li:hover>ul {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .header-main .sm {
+        width: 100%;
+        height: 20vh;
+        margin: 0;
+        padding: 0;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .header-main form {
+        padding-right: 0;
+        width: 90%;
+        height: 40%;
+    }
+
+    .header-main form input {
+        width: 100%;
+        height: 100%;
+        padding: 0 10px 0 20px;
+        font-size: 1.6rem;
+    }
+
+    .header-main form button {
+        padding: 0 5%;
+    }
+
+    .header-main form button img {
+        height: 5vh;
+        padding-top: 15%;
+    }
+
+    .header-main .sm-lenke {
+        height: 50%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .header-main .sm-lenke a {
+        height: 60%;
+        margin: 0 2%;
+        padding: 0;
+    }
+
+    /* NAVBAR SLUTT */
+}
