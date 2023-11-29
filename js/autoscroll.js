@@ -43,3 +43,36 @@ scrollSpeedInput.addEventListener('input', function() {
         pageScroll();
     }
 });
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+  }
+  
+ 
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Function to check if the page is scrolled to the bottom
+    function isScrolledToBottom() {
+        const scrollPosition = window.scrollY || window.pageYOffset;
+        const windowHeight = window.innerHeight;
+        const bodyHeight = document.body.clientHeight;
+
+        return scrollPosition + windowHeight >= bodyHeight;
+    }
+
+    // Event listener for the scroll event
+    window.addEventListener('scroll', function() {
+        if (isScrolledToBottom()) {
+            sleep(1000).then(() => { scrolling=false
+                autoscrollText.style.animation = 'none';
+                scrollSpeed = 0;
+                clearTimeout(scrolldelay); });
+            
+            
+            // The page is scrolled to the bottom
+            console.log('Scrolled to the bottom!');
+            
+            // Your code to handle reaching the bottom of the page
+        }
+    });
+});

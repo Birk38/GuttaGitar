@@ -62,7 +62,7 @@ h3{
     text-align: center;
     height: fit-content;
     padding: 20px;
-    max-width: 80%;
+    max-width: 90%;
 }
 
 #grid_akkorder{
@@ -113,10 +113,9 @@ input#fart{
 
 #Autoscroll_section {
     position: fixed;
-    top: 90%; 
+    top: 88%; 
     left: 50%; 
     transform: translate(-50%, -50%);
-    max-width: 40%;
     background-color: var(--sec);
     border-radius: 50px;
     padding: 10px;
@@ -148,7 +147,7 @@ img{
     100% { transform: scale(1); }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
     #Grid_Sang{
         display: flex;
         flex-direction: column;

@@ -502,7 +502,27 @@ audio {
     margin-left: 25%;
 } */
 
+/* Footer START */
+footer{
+    background-color: var(--pri);
+    height: 25vh;
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
 
+#fet{
+    font-weight: 900;
+}
+
+footer section{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+/* Footer SLUTT */
 
 
 @media only screen and (max-width: 800px) {
