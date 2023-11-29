@@ -147,3 +147,38 @@ img{
     50% { transform: scale(1.1); }
     100% { transform: scale(1); }
 }
+
+@media only screen and (max-width: 800px) {
+    #Grid_Sang{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section #Reklame{
+        display: none;
+    }
+
+    #infobox{
+        max-width: 80%;
+        margin-left: 10%;
+        margin-bottom: 5%;
+    }
+
+    #right-side img:nth-child(2){
+        display: none;
+    }
+
+    #Autoscroll_section {
+        left: 50%;
+        max-width: 30%;
+        padding: 10px;
+    }
+
+    #Autoscroll_section h4 {
+        font-size: 20px;
+    }
+
+    #startButton {
+        padding: 10px
+    }
+}

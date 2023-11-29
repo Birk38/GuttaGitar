@@ -10,7 +10,7 @@ let scrollSpeed = 25;
 function pageScroll() {
     window.scrollBy(0, 1);
     scrollSpeed = parseInt(scrollSpeedInput.value, 10) || 25;
-    scrollSpeed -= 50;
+    scrollSpeed -= 100;
     scrollSpeed *= -1;
     scrolldelay = setTimeout(pageScroll, scrollSpeed);
 }
