@@ -705,3 +705,14 @@ footer section{
 
     /* NAVBAR SLUTT */
 }
+
+@media only screen and (max-width: 1000px) {
+    footer{
+        display: flex;
+        flex-direction: column;
+        height: 30vh;
+    }
+
+
+
+}
