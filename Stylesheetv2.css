@@ -200,7 +200,7 @@ ul li:hover>ul {
 
 .søkekort {
     background-color: #fff;
-    position: absolute;
+    position: fixed;
     top: 55px;
     right: 280px;
     z-index: 1000;
