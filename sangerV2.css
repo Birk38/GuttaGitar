@@ -147,7 +147,52 @@ img{
     100% { transform: scale(1); }
 }
 
-@media only screen and (max-width: 1000px) {
+/* Footer START */
+footer{
+    background-color: var(--pri);
+    height: 25vh;
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+#fet{
+    font-weight: 900;
+}
+
+#footer_grid_1,#footer_grid_3{
+    margin: 25px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+#footer_grid_2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-end;
+    font-weight: 600;
+}
+
+/* Footer SLUTT */
+
+@media only screen and (max-width: 1024px) {
+    footer{
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    footer section{
+        margin: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
     #Grid_Sang{
         display: flex;
         flex-direction: column;
@@ -169,7 +214,7 @@ img{
 
     #Autoscroll_section {
         left: 50%;
-        max-width: 80%;
+        max-width: 50%;
         padding: 10px;
     }
 
@@ -182,12 +227,25 @@ img{
     }
 }
 
-@media only screen and (max-width: 440px) {
+@media only screen and (max-width: 480px) {
+
     #Chords div, #Chords p {
-        font-size: 17px;
+        font-size: 15px;
     }
 
     footer{
-        height: 100vh;
+        height: 20vh;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    footer section{
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footer_grid_1,#footer_grid_3{
+        display: none;
     }
 }
