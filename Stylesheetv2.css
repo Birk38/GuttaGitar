@@ -200,7 +200,7 @@ ul li:hover>ul {
 
 .søkekort {
     background-color: #fff;
-    position: absolute;
+    position: fixed;
     top: 55px;
     right: 280px;
     z-index: 1000;
@@ -501,8 +501,6 @@ audio {
     margin-top: 25px;
     margin-left: 25%;
 } */
-
-
 
 
 @media only screen and (max-width: 800px) {
