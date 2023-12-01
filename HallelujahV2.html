@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,52 +16,53 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="js/autoscroll.js" defer></script>
-
+    <!--MANGLER JAVASCRIPT FOR MOBIL SEARCH BAR(burger menu)-->
 </head>
-<body>
-    <body>
 
-        <div class="mobil-meny">
-            <img src="Bilder/burger-bar.png" alt="mobil meny">
-        </div>
-    
-        <header class="header-main">
-            <nav>
-                <div class="logo">
-                    <img src="Bilder/miniguitar.png" alt="Logo av liten gitar">
-                </div>
-                <ul>
-                    <li><a href="index.html">Hjem</a></li>
-                    <li><a href="#">Grep</a>
-                        <ul>
-                            <li><a href="dur.html">dur</a></li>
-                            <li><a href="moll.html">moll</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Sanger</a>
-                        <ul>
-                            <li><a href="RiptideV2.html">Riptide</a></li>
-                            <li><a href="Livet er for kjipt V2.html">Livet er for kjipt</a></li>
-                            <li><a href="HallelujahV2.html">Hallelujah</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Teori</a></li>
-                </ul>
-    
-            </nav>
-    
-            <div class="sm">
-                <form action="" method="post">
-                    <input type="text" name="søk" placeholder="Søk...">
-                    <button type="submit"><img src="Bilder/søk-ikon.png" alt="søkeknapp"></button>
-                </form>
-                <div class="sm-lenke">
-                    <a href="#"><img src="Bilder/miniguitar.png" alt="test"></a> <!--Kan byttes eller fjernes-->
-                    <a href="#"><img src="Bilder/miniguitar.png" alt="test"></a> <!--Kan byttes eller fjernes-->
-                </div>
-    
+<body>
+    <div class="mobil-meny">
+        <img src="Bilder/burger-bar.png" alt="mobil meny">
+    </div>
+
+    <header class="header-main">
+        <nav>
+            <div class="logo">
+                <img src="Bilder/miniguitar.png" alt="Logo av liten gitar">
             </div>
-        </header>
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="#">Grep</a>
+                    <ul>
+                        <li><a href="dur.html">dur</a></li>
+                        <li><a href="moll.html">moll</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Sanger</a>
+                    <ul>
+                        <li><a href="RiptideV2.html">Riptide</a></li>
+                        <li><a href="Livet er for kjipt V2.html">Livet er for kjipt</a></li>
+                        <li><a href="HallelujahV2.html">Hallelujah</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Teori</a></li>
+            </ul>
+
+        </nav>
+
+        <div class="sm">
+            <form action="" method="post">
+                <input type="search" name="søk" placeholder="Søk..." id="search" data-search autocomplete="off">
+                <button type="submit"><img src="Bilder/søk-ikon.png" alt="søkeknapp"></button>
+            </form>
+            <div class="sm-lenke">
+                <a href="#"><img src="Bilder/miniguitar.png" alt="Logo av liten gitar"></a>
+                <!--Kan byttes eller fjernes-->
+                <a href="#"><img src="Bilder/miniguitar.png" alt="Logo av liten gitar"></a>
+                <!--Kan byttes eller fjernes-->
+            </div>
+
+        </div>
+    </header>
     <section id="Grid_Sang">
         <section id="Reklame">
             <img src="Bilder/Reklame_Adobe.png" alt="Adobe Creative cloud">
@@ -70,9 +72,15 @@
             <h1>Hallelujah - Jeff Buckley</h1>
             <br>
             <h3>Akkorder:</h3>
-            
+
             <div id="grid_akkorder">
-                <p></p><p>Am</p><p>C</p><p>E7</p><p>F</p><p>G</p><p></p>
+                <p></p>
+                <p>Am</p>
+                <p>C</p>
+                <p>E7</p>
+                <p>F</p>
+                <p>G</p>
+                <p></p>
                 <div></div>
                 <img src="Bilder/Akkorder/Am.png" alt="Am">
                 <img src="Bilder/Akkorder/C.png" alt="C">
@@ -85,7 +93,9 @@
             <p>Ingen capo for orginal studioversjon</p>
             <br>
             <section id="Autoscroll_section">
-                <button id="startButton"><h4 id="autoscrollText">AutoScroll©</h4></button>
+                <button id="startButton">
+                    <h4 id="autoscrollText">AutoScroll©</h4>
+                </button>
                 <form action="autoscroll_verdi.html">
                     <div>
                         <input type="range" id="fart" name="fart" min="1" max="100" step="10" />
@@ -95,110 +105,197 @@
             </section>
             <h3>Vers 1</h3>
             <p>
+            <div>
                 <div>
-                    <div><m></m> C <m></m> Am </div>
-                    <div>I heard was a secret chord</div>
+                    <m></m> C <m></m> Am
                 </div>
+                <div>I heard was a secret chord</div>
+            </div>
             </p>
             <p>
+            <div>
                 <div>
-                    <div><m></m> C <m></m><m></m><m></m><m></m> Am </div>
-                    <div>That David played and it pleased the Lord</div>
+                    <m></m> C <m></m>
+                    <m></m>
+                    <m></m>
+                    <m></m> Am
                 </div>
+                <div>That David played and it pleased the Lord</div>
+            </div>
             </p>
             <p>
+            <div>
                 <div>
-                    <div><m></m> F <m></m><m></m> G <m></m><m></m><m></m><m></m>C<m></m>G</div>
-                    <div>But you don't really care for music, do you?</div>
+                    <m></m> F <m></m>
+                    <m></m> G <m></m>
+                    <m></m>
+                    <m></m>
+                    <m></m>C<m></m>G
                 </div>
+                <div>But you don't really care for music, do you?</div>
+            </div>
             </p>
             <p>
+            <div>
                 <div>
-                    <div><m></m> C <m></m><m></m><m></m><m></m>F<m></m><m></m> G </div>
-                    <div>Well it goes like this the fourth, the fifth</div>
+                    <m></m> C <m></m>
+                    <m></m>
+                    <m></m>
+                    <m></m>F<m></m>
+                    <m></m> G
                 </div>
+                <div>Well it goes like this the fourth, the fifth</div>
+            </div>
             </p>
             <p>
+            <div>
                 <div>
-                    <div><m></m> Am <m></m><m></m><m></m>F </div>
-                    <div>The minor fall and the major lift</div>
+                    <m></m> Am <m></m>
+                    <m></m>
+                    <m></m>F
                 </div>
+                <div>The minor fall and the major lift</div>
+            </div>
             </p>
             <p>
+            <div>
                 <div>
-                    <div><m></m> G <m></m><m></m>E7 <m></m><m></m>Am</div>
-                    <div>The baffled king composing hallelujah</div>
+                    <m></m> G <m></m>
+                    <m></m>E7 <m></m>
+                    <m></m>Am
                 </div>
+                <div>The baffled king composing hallelujah</div>
+            </div>
             </p>
             <br>
             <h3>Refreng</h3>
             <p>
+            <div>
                 <div>
-                    <div><m></m> F <m></m><m></m>Am <m></m><m></m>F<m></m>C G C<m></m><m></m>Am C Am</div>
-                    <div>Hallelujah, hallelujah, hallelujah, hallelu-u-u-u-jah....</div>
+                    <m></m> F <m></m>
+                    <m></m>Am <m></m>
+                    <m></m>F<m></m>C G C<m></m>
+                    <m></m>Am C Am
                 </div>
+                <div>Hallelujah, hallelujah, hallelujah, hallelu-u-u-u-jah....</div>
+            </div>
             </p>
             <br>
             <h3>2. Vers</h3>
             <p>
+            <div>
                 <div>
-                    <div><m></m><m></m>  C <m></m><m></m><m></m><m></m><m></m> Am </div>
-                    <div>Well, your faith was strong but you needed proof</div>
+                    <m></m>
+                    <m></m> C <m></m>
+                    <m></m>
+                    <m></m>
+                    <m></m>
+                    <m></m> Am
                 </div>
+                <div>Well, your faith was strong but you needed proof</div>
+            </div>
             </p>
             <p>
+            <div>
                 <div>
-                    <div><m></m> C <m></m><m></m><m></m> Am </div>
-                    <div>You saw her bathing on the roof</div>
+                    <m></m> C <m></m>
+                    <m></m>
+                    <m></m> Am
                 </div>
+                <div>You saw her bathing on the roof</div>
+            </div>
             </p>
             <p>
+            <div>
                 <div>
-                    <div><m></m> F <m></m><m></m> G <m></m><m></m><m></m>C<m></m><m></m>G</div>
-                    <div>Her beauty and the moonlight overthrew you</div>
+                    <m></m> F <m></m>
+                    <m></m> G <m></m>
+                    <m></m>
+                    <m></m>C<m></m>
+                    <m></m>G
                 </div>
+                <div>Her beauty and the moonlight overthrew you</div>
+            </div>
             </p>
             <p>
+            <div>
                 <div>
-                    <div><m></m> C <m></m><m></m><m></m>F<m></m> G </div>
-                    <div>She tied you to her kitchen chair</div>
+                    <m></m> C <m></m>
+                    <m></m>
+                    <m></m>F<m></m> G
                 </div>
+                <div>She tied you to her kitchen chair</div>
+            </div>
             </p>
             <p>
+            <div>
                 <div>
-                    <div><m></m> Am <m></m><m></m><m></m><m></m><m></m>F </div>
-                    <div>She broke your throne and she cut your hair</div>
+                    <m></m> Am <m></m>
+                    <m></m>
+                    <m></m>
+                    <m></m>
+                    <m></m>F
                 </div>
+                <div>She broke your throne and she cut your hair</div>
+            </div>
             </p>
             <p>
+            <div>
                 <div>
-                    <div><m></m> G <m></m><m></m><m></m>E7 <m></m><m></m><m></m>Am</div>
-                    <div>And from your lips she drew the hallelujah</div>
+                    <m></m> G <m></m>
+                    <m></m>
+                    <m></m>E7 <m></m>
+                    <m></m>
+                    <m></m>Am
                 </div>
+                <div>And from your lips she drew the hallelujah</div>
+            </div>
             </p>
             <br>
             <h3>Refreng</h3>
             <p>
+            <div>
                 <div>
-                    <div><m></m> F <m></m><m></m>Am <m></m><m></m>F<m></m>C G C<m></m><m></m>Am C Am</div>
-                    <div>Hallelujah, hallelujah, hallelujah, hallelu-u-u-u-jah....</div>
+                    <m></m> F <m></m>
+                    <m></m>Am <m></m>
+                    <m></m>F<m></m>C G C<m></m>
+                    <m></m>Am C Am
                 </div>
+                <div>Hallelujah, hallelujah, hallelujah, hallelu-u-u-u-jah....</div>
+            </div>
             </p>
         </section>
         <section id="right-side">
             <div id="infobox">
-                <br><h3>Jeff Buckley</h3><br>
-                <p>Jeff Buckley var en amerikansk musiker og låtskriver, født 17. november 1966 i Anaheim, California. Han er best kjent for sitt album "Grace" fra 1994, som inkluderer sanger som "Hallelujah" og "Last Goodbye".</p>
-                <p> Buckley hadde en unik stemme og en bemerkelsesverdig gitarteknikk, og hans musikk kombinerte elementer fra flere sjangre. Dessverre døde han i en drukningsulykke i 1997, men hans musikalske arv lever videre som en betydelig innflytelse på moderne musikere.</p>
-                <img src="https://media.npr.org/assets/img/2016/01/12/jeff-buckley_-c-david-gahr_wide-65df48cccb67074f81c50824e17a6e706c0370df.jpeg" alt="Jeff Buckley">
-                </div>
-                <img src="Bilder/Ad_airtable.png" alt="">
+                <br>
+                <h3>Jeff Buckley</h3><br>
+                <p>Jeff Buckley var en amerikansk musiker og låtskriver, født 17. november 1966 i Anaheim, California.
+                    Han er best kjent for sitt album "Grace" fra 1994, som inkluderer sanger som "Hallelujah" og "Last
+                    Goodbye".</p>
+                <p> Buckley hadde en unik stemme og en bemerkelsesverdig gitarteknikk, og hans musikk kombinerte
+                    elementer fra flere sjangre. Dessverre døde han i en drukningsulykke i 1997, men hans musikalske arv
+                    lever videre som en betydelig innflytelse på moderne musikere.</p>
+                <img src="https://media.npr.org/assets/img/2016/01/12/jeff-buckley_-c-david-gahr_wide-65df48cccb67074f81c50824e17a6e706c0370df.jpeg"
+                    alt="Jeff Buckley">
+            </div>
+            <img src="Bilder/Ad_airtable.png" alt="">
         </section>
     </section>
     <footer>
-        <section id="footer_grid_1"><p>Eksempel tekst lorum ipsum dolor shit test test</p></section>
-        <section id="footer_grid_2"><p>GuttaGitar© 2023</p></section>
-        <section id="footer_grid_3"><p id="fet">Kontakt oss:</p><div><p>Tlf: 999 98 888</p></div><p>Epost: business.inquiries@guttagitar.no</p></section>
+        <section id="footer_grid_1">
+            <p>Eksempel tekst lorum ipsum dolor shit test test</p>
+        </section>
+        <section id="footer_grid_2">
+            <p>GuttaGitar© 2023</p>
+        </section>
+        <section id="footer_grid_3">
+            <p id="fet">Kontakt oss:</p>
+            <div>
+                <p>Tlf: 999 98 888</p>
+            </div>
+            <p>Epost: business.inquiries@guttagitar.no</p>
+        </section>
     </footer>
-    </body>
+</body>
+
 </html>
