@@ -683,3 +683,256 @@ audio {
 
     /* NAVBAR SLUTT */
 }
+
+/*SANGER V2 START*/
+/*GENERELLE DEFINISJONER*/
+m{
+    display: inline-block;
+    width: 25px;
+}
+
+#fet{
+    font-weight: 900;
+}
+
+h3{
+    font-size: 25px;
+    font-weight:800;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 45px;
+}
+/*OPPSETT GRID*/
+#Grid_Sang{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: 60px;
+}
+
+/*VENSTRE SIDE*/
+#Reklame{
+    text-align: center;
+}
+#Reklame img{
+    margin-top: 60px;
+}
+/*Venstre side slutt*/
+/*HOVEDINNHOLD*/
+#Chords{
+    text-align: center;
+    margin-top: 15px;
+}
+#Chords div, #Chords p{
+    font-size: 25px;
+
+}
+
+#grid_akkorder{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+
+    justify-items: center;
+    align-items: center;
+}
+
+/*Livet er for kjipt trengte egen pga. oddetall i antall akkorder*/
+#grid_akkorder_LEFK{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr;
+
+    justify-items: center;
+    align-items: center;
+    
+}
+
+/*Autoscroll-knapp*/
+#startButton{
+    padding: 25px;
+    background-color: var(--sec);
+    border-radius: 50px;
+    cursor: pointer;
+    border: 5px black;
+}
+
+#Autoscroll_section h4{
+    font-size: 25px;
+    font-weight: 800;
+    
+}
+
+#Autoscroll_section form{
+    all: initial;
+    appearance: auto;
+}
+
+input#fart{
+    appearance: auto;
+}
+
+#Autoscroll_section {
+    position: fixed;
+    top: 88%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    background-color: var(--sec);
+    border-radius: 50px;
+    padding: 10px;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+/*Hovedinnhold slutt*/
+/*HØYRE SIDE*/
+#right-side{
+    display: flex;
+    flex-direction: column;
+}
+
+#infobox img{
+    border-radius: 25px;
+    margin-top: 25px;
+}
+
+#right-side img:nth-child(2){
+    max-width: 60%;
+    margin-top: 50px;
+    margin-left: 10%;
+}
+
+img{
+    border-radius: 25px;
+}
+#infobox{
+    background-color: var(--sec);
+    border-radius: 50px;
+    margin-top: 50px;
+    text-align: center;
+    height: fit-content;
+    padding: 20px;
+    max-width: 90%;
+}
+/*Høyre side slutt*/
+/* Footer START */
+footer{
+    background-color: var(--pri);
+    height: 175px; /*23vh*/
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+#footer_grid_1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr;
+    align-items: center;
+    justify-items: center;
+    margin: 20px;
+}
+
+#footer_grid_2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: flex-end;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+#footer_grid_3{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: center;
+}
+/* Footer SLUTT */
+/*MEDIA QUERIES START*/
+/*MEDIA QUERIES IPAD STANDARD START**/
+@media only screen and (max-width: 1024px) {
+    footer{
+        
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    footer section{
+        margin: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    #Grid_Sang{
+        display: flex;
+        flex-direction: column;
+    }
+
+    section #Reklame{
+        display: none;
+    }
+
+    #infobox{
+        max-width: 80%;
+        margin-left: 10%;
+        margin-bottom: 5%;
+    }
+
+    #right-side img:nth-child(2){
+        display: none;
+    }
+
+    #Autoscroll_section {
+        left: 50%;
+        max-width: 50%;
+        padding: 10px;
+    }
+
+    #Autoscroll_section h4 {
+        font-size: 20px;
+    }
+
+    #startButton {
+        padding: 10px
+        
+    }
+}
+/*Ipad standard slutt*/
+/*MOBIL STANDARD START*/
+@media only screen and (max-width: 480px) {
+
+    #Chords div, #Chords p {
+        font-size: 15px;
+    }
+
+    footer{
+        height: 20vh;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    footer section{
+        margin: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #footer_grid_1,#footer_grid_3{
+        display: none;
+    }
+
+    m{
+        width: 14px;
+    }
+}
+/*Mobil standard slutt*/
+/*Media queries slutt*/
+/*SANGER V2 SLUTT*/
