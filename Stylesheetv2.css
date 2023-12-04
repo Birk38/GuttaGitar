@@ -706,6 +706,11 @@ h1 {
   font-weight: 800;
   font-size: 45px;
 }
+
+#Reklame img, #right-side img{
+  border-radius: 25px;
+}
+
 /*OPPSETT GRID*/
 #Grid_Sang {
   display: grid;
@@ -810,9 +815,9 @@ input#fart {
 #right-side img:nth-child(2) {
   max-width: 60%;
   margin-top: 50px;
-  margin-left: 10%;
-  border-radius: 25px;
+  margin-left: 15%;
 }
+
 
 #infobox {
   background-color: var(--sec);
