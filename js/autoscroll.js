@@ -92,8 +92,7 @@ window.onscroll = function () {
     var referenceElementHeight = referenceElement.offsetHeight;
 
     // Calculate the hide point to be the sum of offset top and height of the reference element
-    var hidePoint = referenceElementOffset + referenceElementHeight;
-
+    var hidePoint = referenceElementOffset + referenceElementHeight+88
     // Get the bottom position of the viewport
     var bottomPosition = window.innerHeight + window.scrollY;
 

@@ -959,9 +959,10 @@ footer {
 
   #Autoscroll_section {
     left: 50%;
-    max-width: 70%;
+    max-width: 100%;
     padding: 10px;
     top: 88%;
+    width: 80%;
   }
 }
 /*Mobil standard slutt*/
