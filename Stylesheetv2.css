@@ -811,11 +811,9 @@ input#fart {
   max-width: 60%;
   margin-top: 50px;
   margin-left: 10%;
-}
-
-img {
   border-radius: 25px;
 }
+
 #infobox {
   background-color: var(--sec);
   border-radius: 50px;
