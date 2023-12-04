@@ -1,21 +1,27 @@
+//AUTOSKROLLFUNKSJON/KNAPP
 let startButton = document.getElementById('startButton'); // importere button element
 let scrollSpeedInput = document.getElementById('fart'); // importere input element
 
-
+//definere variabler
 let scrolling = false;
 let scrolldelay;
 let scrollSpeed = 25;
 
-// Funksjon autoskroll start
+// definere funksjon pageScroll
 function pageScroll() {
     window.scrollBy(0, 1);
     scrollSpeed = parseInt(scrollSpeedInput.value, 10) || 25;
+
+    //det vi endrer på er faktisk hvor lenge den skal vente mellom scrollinga. Derfor må scrollspeedinput gjøres om til det speila tallet
     scrollSpeed -= 100;
     scrollSpeed *= -1;
     scrolldelay = setTimeout(pageScroll, scrollSpeed);
 }
 
-// autoscroll start on click
+// event listner
+startButton.addEventListener('click', toggleAutoScroll);
+
+// autoscroll start på klikk
 function toggleAutoScroll() {
     if (!scrolling) {
         // live oppdatering
@@ -29,9 +35,6 @@ function toggleAutoScroll() {
     }
 }
 
-// event listner
-startButton.addEventListener('click', toggleAutoScroll);
-
 // dynamisk scroll event listner
 scrollSpeedInput.addEventListener('input', function () {
     // Update scrollSpeed with the current input value
@@ -44,6 +47,7 @@ scrollSpeedInput.addEventListener('input', function () {
     }
 });
 
+//definere pause funksjon for venting
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
@@ -51,7 +55,7 @@ function sleep(ms) {
 
 
 document.addEventListener('DOMContentLoaded', function () {
-    // Function to check if the page is scrolled to the bottom
+    // Funksjon for skjermposisjon
     function isScrolledToBottom() {
         const scrollPosition = window.scrollY || window.pageYOffset;
         const windowHeight = window.innerHeight;
@@ -60,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
         return scrollPosition + windowHeight >= bodyHeight;
     }
 
-    // Event listener for the scroll event
+    // if test bunn av siden=sant
     window.addEventListener('scroll', function () {
         if (isScrolledToBottom()) {
             sleep(2000).then(() => {
@@ -74,34 +78,31 @@ document.addEventListener('DOMContentLoaded', function () {
             // The page is scrolled to the bottom
             console.log('Scrolled to the bottom!');
 
-            // Your code to handle reaching the bottom of the page
         }
     });
 });
 //FJERNER AUTOSCROLL SECTION OVER FOOTER
-// Get the elements you want to manipulate
+// Importere elementer
 var elementToHide = document.getElementById('Autoscroll_section');
 var referenceElement = document.getElementById('Grid_Sang');
 
-// Add a scroll event listener
+// Event listner
 window.onscroll = function () {
-    // Get the offset top of the reference element
+    // Importere offset
     var referenceElementOffset = referenceElement.offsetTop;
 
-    // Get the height of the reference element
+    //høyde på referanseelement
     var referenceElementHeight = referenceElement.offsetHeight;
 
-    // Calculate the hide point to be the sum of offset top and height of the reference element
+    // Summen av offset top høyden på elementet + elementets margin bottom
     var hidePoint = referenceElementOffset + referenceElementHeight+88
-    // Get the bottom position of the viewport
+    // Bunnpunkt skjerm,
     var bottomPosition = window.innerHeight + window.scrollY;
 
-    // Check if the bottom position is beyond the hidePoint
+    // if test
     if (bottomPosition > hidePoint) {
-        // If it is, hide the element
         elementToHide.style.display = 'none';
     } else {
-        // If not, show the element
         elementToHide.style.display = 'block';
     }
 };
