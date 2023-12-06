@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
     // if test bunn av siden=sant
     window.addEventListener('scroll', function () {
         if (isScrolledToBottom()) {
-            sleep(2000).then(() => {
+            sleep(4000).then(() => {
                 scrolling = false
                 autoscrollText.style.animation = 'none';
                 scrollSpeed = 0;
