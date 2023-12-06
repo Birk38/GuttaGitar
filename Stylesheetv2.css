@@ -146,6 +146,26 @@ ul li:hover > ul {
   display: block;
 }
 
+/*Ny sang marker courtesy Birk*/
+.ny_sang {
+  position: relative;
+}
+
+.ny_sang::before {
+  content: "Ny";
+  display: block;
+  position: absolute;
+  top: 2;
+  right: 0;
+  background-color: #918b8b;
+  color: #333;
+  padding: 2px 4px; /* Adjust the padding as needed */
+  border-radius: 5px;
+  font-size: 12px;
+  font-family: "Quicksand";
+}
+
+/*Ny sang marker slutt*/
 /*drop down styling stop*/
 
 .header-main .sm {
