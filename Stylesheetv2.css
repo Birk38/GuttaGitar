@@ -955,6 +955,10 @@ footer {
     font-size: 15px;
   }
 
+  #Chords h1{
+    font-size: 35px;
+  }
+
   footer {
     height: 400px;
     display: grid;
