@@ -159,7 +159,7 @@ ul li:hover > ul {
   right: 0;
   background-color: #918b8b;
   color: #333;
-  padding: 2px 4px; /* Adjust the padding as needed */
+  padding: 2px 4px;
   border-radius: 5px;
   font-size: 12px;
   font-family: "Quicksand";
