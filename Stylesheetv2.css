@@ -146,6 +146,12 @@ ul li:hover > ul {
   display: block;
 }
 
+#kommer_snart {
+  font-size: 200px;
+  text-align: center;
+  margin: 100px 0;
+}
+
 /*Ny sang marker courtesy Birk*/
 .ny_sang {
   position: relative;
@@ -268,6 +274,10 @@ ul li:hover > ul {
   width: 100%;
   height: 400px;
 
+  background-image: url(Bilder/bakgrunn-repeating.jpeg);
+  background-repeat: repeat;
+  filter: grayscale(10%) brightness(80%);
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -290,12 +300,21 @@ ul li:hover > ul {
   width: 70vw;
   height: fit-content;
   padding: 30px;
+  z-index: 200;
 }
 
 #hero .jonas {
   width: 300px;
   position: relative;
   top: 100px;
+}
+
+#hero div:nth-last-of-type(2){
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+#hero p{
+  font-size: 1.5rem;
 }
 
 /* HERO SLUTT */
@@ -368,12 +387,14 @@ ul li:hover > ul {
   border-radius: 40px;
   max-height: 50%;
   align-self: center;
+  margin-bottom: 15px;
 }
 
 .minicontainer h2 {
   text-align: center;
   font-size: 30px;
-  padding: 7px 5px;
+  padding: 160px 40px;
+  margin: -160px -40px;
 }
 
 .minicontainer p {
@@ -524,32 +545,54 @@ audio {
 
 /* DUR-SIDEN SLUTT*/
 
-/* #hero .container{
-    background-image: url(Bilder/jonasogbirkbakgrunn.png);
-    width: 100%;
-    height: 400px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-color: var(--sec);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content:start;
-    }
-    
-#hero .container h1{
-    font-size: 50px;
-    font-weight: 700;
-}
-
-#dyptekst{
-    width: 60%;
-    margin-top: 25px;
-    margin-left: 25%;
-} */
-
 @media only screen and (max-width: 800px) {
+  #hero {
+    margin-top: 0;
+  }
+
+  .birk {
+    margin: 0;
+    padding: 0;
+  }
+
+  .birk img{
+    width: 200px;
+    max-width: inherit;
+    padding: 0;
+    position: absolute;
+    top: -120px;
+  }
+
+  #hero p {
+    font-size: 0.9rem;
+  }
+
+  #hero h1 {
+    font-size: 20px;
+  }
+
+  .minicontainer div {
+    max-height: 300px;
+    max-width: 300px;
+  }
+
+  .minicontainer {
+    justify-content: center;
+  }
+
+  #tilby {
+    height: 830px;
+  }
+
+  #tilby .minicontainer:nth-last-of-type(1) {
+    margin-top: 10px;
+  }
+
+  #tilby i {
+    display: none;
+  }
+
+
   /* NAVBAR START */
 
   .header-main {
@@ -737,8 +780,11 @@ audio {
   }
 
   .linkboks img {
-    width: 100%;
-    height: 60vw;
+    width: 67.5vw;
+    height: 100%;
+    max-width: none;
+    position: relative;
+    right: 20px;
   }
 
   .overskrift-strek {
@@ -746,6 +792,26 @@ audio {
   }
 
   /* ANDRE LENKER SLUTT */
+
+  /* AKKORD START */
+
+  #akkord-seksjon {
+    margin: 0;
+  }
+
+  #akkord-seksjon .akkordcontainer {
+    width: 100%;
+  }
+
+  
+  a, #akkord-seksjon .akkordcontainer div {
+    min-width: 200px;
+    max-width: 30%;
+    height: 300px;
+    margin: 0 20px;
+  }
+
+  /* AKKORD SLUTT */
 
   
 }
@@ -1037,6 +1103,62 @@ footer {
     top: 88%;
     width: 80%;
   }
+
+  #akkord-seksjon .akkordcontainer div{
+    width: 200px;
+    height: 200px;
+    padding: 2px;
+    min-width: 0;
+    max-width: inherit;
+    margin-top: 20px;
+  }
+
+  #akkord-seksjon .akkordcontainer {
+    width: 190px;
+  }
+
+
+  #akkord-seksjon .akkordcontainer div img {
+    width: 100px;
+    height: 100px;
+  }
+
+  #akkord-seksjon .akkordcontainer div:nth-last-of-type(1) {
+    width: 150px;
+    max-width: 200px;
+  }
+
+  #akkord-seksjon .akkordcontainer h2:nth-last-of-type(1) {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .akkordcontainer i {
+    margin-top: 90px;
+    font-size: 50px;
+  }
+  
+  #hero p {
+    font-size: 0.9rem;
+  }
+
+  #hero div:nth-of-type(2) {
+    padding: 20px 10px;
+  }
+
+  .minicontainer div {
+    max-height: 290px;
+    max-width: 300px;
+  }
+
+  #tilby {
+    height: 1400px;
+  }
+
+  #tilby .minicontainer:nth-last-of-type(1) {
+    margin-top: 250px;
+  }
+
 
   
 }
