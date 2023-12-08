@@ -546,6 +546,24 @@ audio {
 /* DUR-SIDEN SLUTT*/
 
 @media only screen and (max-width: 800px) {
+
+  .søkekort {
+    z-index: 10000;
+    position: fixed;
+    top: 100px;
+    height: fit-content;
+    width: 80vw;
+    display: flex;
+    flex-direction: column-reverse;
+    left: 30px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  .søkekort div:nth-of-type(3) {
+    display: none; /*ENDRE TILBAKE */
+  }
+
   #hero {
     margin-top: 0;
   }
