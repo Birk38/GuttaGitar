@@ -363,7 +363,7 @@ ul li:hover > ul {
 }
 
 .minicontainer {
-  min-width: 400px;
+  min-width: 105%;
   height: 400px;
   display: flex;
   flex-wrap: wrap;
@@ -570,7 +570,7 @@ audio {
     margin-top: 0;
   }
 
-  .birk {
+  .birk{
     margin: 0;
     padding: 0;
   }
@@ -582,6 +582,15 @@ audio {
     position: absolute;
     top: -120px;
   }
+  .jonas img{
+    width: 200px;
+    max-width: inherit;
+    padding: 0;
+    position: absolute;
+    top: -50px;
+    right:0px;
+
+  }
 
   #hero p {
     font-size: 0.9rem;
@@ -589,6 +598,10 @@ audio {
 
   #hero h1 {
     font-size: 20px;
+  }
+
+  #hero div:nth-last-of-type(2){
+    width: 400%;
   }
 
   .minicontainer div {
