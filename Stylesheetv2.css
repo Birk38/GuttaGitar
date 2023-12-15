@@ -363,7 +363,7 @@ ul li:hover > ul {
 }
 
 .minicontainer {
-  min-width: 105%;
+  min-width: 400px;
   height: 400px;
   display: flex;
   flex-wrap: wrap;
@@ -611,6 +611,7 @@ audio {
 
   .minicontainer {
     justify-content: center;
+    min-width: 105%;
   }
 
   #tilby {
