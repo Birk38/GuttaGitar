@@ -103,6 +103,6 @@ window.onscroll = function () {
     if (bottomPosition > hidePoint) {
         elementToHide.style.display = 'none';
     } else {
-        elementToHide.style.display = 'block';
+        elementToHide.style.display = 'flex';
     }
 };
