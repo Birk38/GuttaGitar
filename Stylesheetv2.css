@@ -789,6 +789,9 @@ audio {
     margin: 0 2%;
     padding: 0;
   }
+  .søkekort{
+    top: 88%;
+  }
 
   /* NAVBAR SLUTT */
 
@@ -1173,11 +1176,7 @@ footer {
   }
 
   #tilby {
-    height: 1400px;
-  }
-
-  #tilby .minicontainer:nth-last-of-type(1) {
-    margin-top: 250px;
+    height: 1200px;
   }
 
 
