@@ -686,6 +686,7 @@ audio {
     flex-direction: column;
     justify-content: center;
     transition: all ease-in-out 100ms;
+    align-items: center;
   }
 
   .header-main ul li:nth-last-child(1) {
@@ -723,13 +724,13 @@ audio {
 
   .header-main ul li ul li {
     height: fit-content;
-    display: block;
     background-color: var(--sec);
   }
 
   .header-main ul li ul li a {
     background-color: var(--sec);
     color: #fff;
+    font-size: 27px;
   }
 
   .header-main ul li ul li a:hover {
@@ -825,8 +826,8 @@ audio {
 
   
   a, #akkord-seksjon .akkordcontainer div {
-    min-width: 200px;
-    max-width: 30%;
+    /*min-width: 200px;
+    max-width: 30%;*/
     height: 300px;
     margin: 0 20px;
   }
