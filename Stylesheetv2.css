@@ -348,6 +348,7 @@ ul li:hover > ul {
   width: 100%;
   height: fit-content;
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -380,6 +381,7 @@ ul li:hover > ul {
   flex-direction: column;
   transition: box-shadow 100ms;
   position: relative;
+  align-items: center;
 }
 
 .minicontainer img {
