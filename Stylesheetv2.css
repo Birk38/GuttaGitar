@@ -818,9 +818,11 @@ audio {
   }
 
   .linkboks img {
-    width: 67.5vw;
+    width: calc(100% + 40px);
     height: 100%;
     max-width: none;
+    margin: 0;
+    vertical-align: top;
     position: relative;
     right: 20px;
   }
